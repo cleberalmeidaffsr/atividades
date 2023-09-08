@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplo de Site Acessível</title>
+</head>
+
+<body>
+    <script>
+
+        function light() {
+
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black"
+        }
+
+        function dark() {
+            document.body.style.backgroundColor = "black"
+            document.body.style.color = "white"
+        }
+
+        let i = 0;
+        function fontSize() {
+            var tamanhos = ["12px", "16px", "20px", "24px", "28px"];
+
+            document.body.style.fontSize = tamanhos[i];
+            i++;
+            if (i == 5) i = 0;
+        }
+    </script>
+
+    <main>
+        <section>
+            <h2>Início</h2>
+            <br>
+            <p>Bem-vindo ao meu site acessível!</p>
+            <br>
+            <img src="piza.png" alt="Uma imagem representando o início do site" width="200" height="200">
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <br>
+            <p>Esta é a seção sobre o meu site acessível.</p>
+            <br>
+        </section>
+
+        <section>
+            <p>Clique abaixo para alterar o modo e o tamanho da fonte: </p>
+
+            <button onclick="light()">Modo claro</button>
+            <button onclick="dark()">Modo escuro</button>
+            <button onclick="fontSize()">Alterar Tamanho da Fonte</button>
+        </section>
+    </main>
+</body>
+
+</html>
