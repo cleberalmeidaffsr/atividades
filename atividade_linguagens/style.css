@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #696767e0;
 }
 
 h1 {
@@ -11,7 +11,7 @@ table {
     margin: 20px auto;
     border-collapse: collapse;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(194, 240, 29, 0.356);
 }
 
 th, td {
