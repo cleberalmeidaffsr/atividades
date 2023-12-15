@@ -24,7 +24,7 @@ module.exports = {
         let produto = await lojaService.buscarProduto(codigo);
 
         if(produto) {
-            json.result = itemUm;
+            json.result = produto;
         }
 
         res.json(json);
